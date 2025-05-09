@@ -9,8 +9,22 @@ import img_jpg from "@/assets/img_jpg.jpg";
 export const App = () => {
   const [count, setCount] = useState<number>(0);
   const increment = () => setCount((prev) => prev + 1);
+
+  // if (__PLATFORM__ === "desktop") {
+  //   return <div>isdesktopplatform</div>;
+  // }
+
+  // if (__PLATFORM__ === "mobile") {
+  //   return <div>ismobplatform</div>;
+  // }
+
+  // if(__ENV__ === "development"){
+  //   addDevtools
+  // }
+
   return (
     <div>
+      <h1>{__PLATFORM__}</h1>
       <div>
         <div>
           <img width={100} height={100} src={img_png} alt="img_png" />
