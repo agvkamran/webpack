@@ -6,10 +6,14 @@ import img_png from "@/assets/img_png.png";
 import Img_svg from "@/assets/img_svg.svg";
 import img_jpg from "@/assets/img_jpg.jpg";
 
+function TODO(a: number){
+  console.log(a);
+}
+
 export const App = () => {
   const [count, setCount] = useState<number>(0);
   const increment = () => setCount((prev) => prev + 1);
-
+  // TODO('5');
   // if (__PLATFORM__ === "desktop") {
   //   return <div>isdesktopplatform</div>;
   // }
